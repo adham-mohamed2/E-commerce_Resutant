@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freash juice</title>
+    <style>
+        .food{
+            background: linear-gradient(rgba(0 , 0 , 0 ,0.6),rgba(0,0,0,0.6)) , url(img/juice.jpg);
+            min-height: 240vh;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+    <!-- file font auwsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">   
+    <!-- file css style -->
+    <link rel="stylesheet" href="css-file/food-style.css">
+</head>
+<body>
+    <section class="food">
+    <!-- start header -->
+    <header>
+        <div class="container-heder">
+            <h1 class="logo">vegetarian food</h1>
+            <nav>
+                <ul id="main-link">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vg-index.html">Veg</a></li>
+                    <li><a href="non-veg.html">Non-Veg</a></li>
+                    <li><a href="ice-cream.html">Ice-Cream</a></li>
+                    <li><a href="milkshaks.html">MilkShakes</a></li>
+                    <li><a href="juice.html">Juices</a></li>
+                    <li><a href="cakes.html">Cakes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <button id="show-product-link">
+                        show product
+                    </button>
+
+                    <div class="search-response-link">
+                        <input id="input-link" type="text" onkeyup="search(this.id)" placeholder="search here">
+                    </div>
+
+                </ul>
+                <div class="span">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <button id="btn-card">
+                    card 
+                    <i class="fa fa-cart-plus" id="cart-icon"></i>'
+                    <div class="cart-count">0</div>
+                </button>
+                <button id="search-btn">
+                    search
+                </button>
+            </nav>
+        </div>
+        <!-- section start cart -->
+        <div class="cart">
+            <h2 class="cart-title">cart item</h2>
+            <div class="cart-content">
+                <div class="con-item">
+                    
+                </div>
+            </div>
+
+            <div class="total">
+                <div class="total-title">total</div>
+                <div class="total-price">Rs.0</div>
+            </div>
+
+            <button class="btn-buy">place order</button>
+
+            <i class="fa fa-close" id="cart-close"></i>
+            
+            <div class="fixed">
+                <button class="show-cart">show cart</button>
+            </div>
+                
+            
+        </div>
+        <!-- section end cart -->
+    </header>
+
+    <!-- end header -->
+    
+    <div class="search">
+        <input id="input" onkeyup="search(this.id)" type="text" placeholder="search here....">
+        <i class="fa fa-close" id="search-close"></i>
+    </div>
+
+        <!-- start section content -->
+        <div class="container">
+            <div class="box-food">
+                <img src="img-juice/juice1.jpg" id="ty" alt="" class="food-img">
+                <h2 class="food-title" id="tp">balck choclate</h2>
+                <h3 class="food-price" id="to">Rs.150.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card">
+                        Add to cart
+                </button>
+            </div>
+            <div class="box-food">
+                <img src="img-juice/juice2.jpg" id="ty" alt="" class="food-img">
+                <h2 class="food-title" id="tp">shaks-choclate</h2>
+                <h3  class="food-price">Rs.160.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card" id="to">
+                        Add to cart
+                </button>
+            </div>
+            <div class="box-food">
+                <img src="img-juice/juice3.jpg" alt="" class="food-img">
+                <h2 class="food-title">shacks-vanallia</h2>
+                <h3  class="food-price">Rs.160.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card">
+                        Add to cart
+                </button>
+            </div>
+            <div class="box-food">
+                <img src="img-juice/juice4.jpg" alt="" class="food-img">
+                <h2 class="food-title">milkshaks cart</h2>
+                <h3  class="food-price">Rs.160.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card">
+                        Add to cart
+                </button>
+            </div>
+            <div class="box-food">
+                <img src="img-juice/juice5.jpg" alt="" class="food-img">
+                <h2 class="food-title">sweet shakes</h2>
+                <h3  class="food-price">Rs.160.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card">
+                        Add to cart
+                </button>
+            </div>
+            <div class="box-food">
+                <img src="img-juice/juice6.jpg" alt="" class="food-img">
+                <h2 class="food-title">the milk way</h2>
+                <h3  class="food-price">Rs.160.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card">
+                        Add to cart
+                </button>
+            </div>
+            <div class="box-food">
+                <img src="img-juice/juice17.jpg" alt="" class="food-img">
+                <h2 class="food-title">milkshak villa</h2>
+                <h3  class="food-price">Rs.160.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card">
+                        Add to cart
+                </button>
+            </div>
+            <div class="box-food">
+                <img src="img-juice/juice8.jpg" alt="" class="food-img">
+                <h2 class="food-title">milkshake squad</h2>
+                <h3  class="food-price">Rs.160.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card">
+                        Add to cart
+                </button>
+            </div>
+            <div class="box-food">
+                <img src="img-juice/juice9.jpg" alt="" class="food-img">
+                <h2 class="food-title">milk maid</h2>
+                <h3  class="food-price">Rs.160.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card">
+                        Add to cart
+                </button>
+            </div>
+            <div class="box-food">
+                <img src="img-juice/juice10.jpg" alt="" class="food-img">
+                <h2 class="food-title">super shaks</h2>
+                <h3  class="food-price">Rs.160.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card">
+                        Add to cart
+                </button>
+            </div>
+            <div class="box-food">
+                <img src="img-juice/juice21.jpg" alt="" class="food-img">
+                <h2 class="food-title">smoothie shacke</h2>
+                <h3  class="food-price">Rs.160.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card">
+                        Add to cart
+                </button>
+            </div>
+            <div class="box-food">
+                <img src="img-juice/juice11.jpg" alt="" class="food-img">
+                <h2 class="food-title">shacke house</h2>
+                <h3  class="food-price">Rs.160.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card">
+                        Add to cart
+                </button>
+            </div>
+            <div class="box-food">
+                <img src="img-juice/juice12.jpg" alt="" class="food-img">
+                <h2 class="food-title">dairy king</h2>
+                <h3  class="food-price">Rs.160.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card">
+                        Add to cart
+                </button>
+            </div>
+            <div class="box-food">
+                <img src="img-juice/juice14.jpg" alt="" class="food-img">
+                <h2 class="food-title">strawberry</h2>
+                <h3  class="food-price">Rs.160.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card">
+                        Add to cart
+                </button>
+            </div>
+            <div class="box-food">
+                <img src="img-juice/juice20.jpg" alt="" class="food-img">
+                <h2 class="food-title">forzen-strwbery</h2>
+                <h3  class="food-price">Rs.160.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card">
+                        Add to cart
+                </button>
+            </div>
+            <div class="box-food">
+                <img src="img-juice/juice15.jpg" alt="" class="food-img">
+                <h2 class="food-title">milkshak-barry</h2>
+                <h3  class="food-price">Rs.160.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card">
+                        Add to cart
+                </button>
+            </div>
+            <div class="box-food">
+                <img src="img-juice/juice16.jpg" alt="" class="food-img">
+                <h2 class="food-title">milk-vanillia</h2>
+                <h3  class="food-price">Rs.160.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card">
+                        Add to cart
+                </button>
+            </div>
+            <div class="box-food">
+                <img src="img-juice/juice17.jpg" alt="" class="food-img">
+                <h2 class="food-title">milk-choclate</h2>
+                <h3  class="food-price">Rs.160.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card">
+                        Add to cart
+                </button>
+            </div>
+            <div class="box-food">
+                <img src="img-juice/juice18.jpg" alt="" class="food-img">
+                <h2 class="food-title">vanila-strwbery</h2>
+                <h3  class="food-price">Rs.160.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card">
+                        Add to cart
+                </button>
+            </div>
+            <div class="box-food">
+                <img src="img-juice/juice19.jpg" alt="" class="food-img">
+                <h2 class="food-title">sutterstock</h2>
+                <h3  class="food-price">Rs.160.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card">
+                        Add to cart
+                </button>
+            </div>
+            <div class="box-food">
+                <img src="img-juice/juice20.jpg" alt="" class="food-img">
+                <h2 class="food-title">milkshack-dakiry</h2>
+                <h3  class="food-price">Rs.160.00</h3>
+                <i class="fa-solid fa-heart"></i>
+                <button class="add-card">
+                        Add to cart
+                </button>
+            </div>
+        <!-- end section content -->
+        </div>
+    </section>
+    
+
+    <!-- file javascript -->
+    <script src="javascrpt-file/main.js"></script>
+</body>
+</html>

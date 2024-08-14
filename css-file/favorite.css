@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Open+Sans:wght@400;700&family=Oswald:wght@400;500&family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Ubuntu&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;700&family=Oswald:wght@400;500&family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,400&family=Ubuntu&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Roboto' , sans-serif;
+}
+.contant{
+    width:100%;
+    height:100vh;
+    background-color: whitesmoke;
+    padding:20px;
+    display: flex;
+    overflow: hidden;
+}
+.dashbord{
+    width:260px;
+    height:100vh;
+    background-color: #fff;
+    padding:15px 0;
+    margin-right: 15px;
+    position: relative;
+    border-radius: 20px;
+}
+ul{
+    list-style: none;
+    height: 95%;
+}
+ul li:not(:first-child){
+    margin:10px 0;
+    padding:15px 10px;
+    transform: 0.5s "background";
+}
+ul li:not(:first-child):hover{
+    background-color: skyblue;
+    border-right: 5px solid rgba(255, 0, 212, 0.488);
+}
+ul li a{
+    text-decoration: none;
+    color:#000;
+    font-weight: 400;
+    text-transform: capitalize;
+    
+}
+ul li a i{
+    margin-right: 10px;
+    font-size: 18px;
+}
+ul li a span{
+    font-size: 22px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h2{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 800;
+    font-size: 30px;
+}
+.logo img{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+    
+}
+.active{
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    width:100%;
+}
+
+/* end dashbord */
+
+.contantfile{
+    width: calc(100% - 260px);
+    height:100vh;
+}
+nav{
+    width:100%;
+    height:60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    padding:20px;
+    margin-bottom: 30px;
+
+}
+nav .search{
+    width:270px;
+    height:35px;
+    border:none;
+    outline:none;
+    padding:15px;
+    color:#000;
+    background-color: whitesmoke;
+}
+::placeholder{
+    text-transform: capitalize;
+    font-size:18px;
+}
+nav img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    object-fit: cover;
+}
+
+/* end navbare */
+
+.showproduct{
+    padding: 0 30px;
+    width:100%;
+    /* height:100%; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.cart-box{
+    background-color: #fff;
+    padding:15px;
+    width:275px;
+    height:280px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.cart-box  img{
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width:140px;
+    height:80px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+.cart-box  .cart-food-tilte{
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color:rgb(20, 22, 170);
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+
+.price-box{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+.fa-heart2{
+    position: absolute;
+    left:60px;
+    bottom: 35px;
+    font-size: 18px;
+    cursor: pointer;
+    color:red;
+}
+#cart-icon{
+    position: absolute;
+    right:60px;
+    bottom: 35px;
+    font-size: 18px;
+    cursor: pointer;
+    color:#000;
+}
+/* responsev */
+@media (max-width:896px) {
+    .contant{
+        padding: 5px;
+    }
+    .contant .dashbord{
+        width:90px;
+        overflow: hidden;
+    }
+    .contant .dashbord ul li:not(:first-child){
+        padding:18px 10px;
+        text-align: center;
+    }
+    .contant .dashbord ul li a i {
+        margin-right: 10px;
+        font-size: 25px;
+    }
+    .contant .dashbord ul li a span{
+        display: none;
+    }
+    .contantfile{
+        width:calc(100% - 100px);
+        height:100vh;
+        overflow: hidden;
+    }
+    .contantfile nav img{
+        display:none;
+    }
+    .showproduct {
+        padding: 0 30px;
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        overflow-y: auto;
+    }
+}

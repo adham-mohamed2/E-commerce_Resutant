@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Open+Sans:wght@400;700&family=Oswald:wght@400;500&family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Ubuntu&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;700&family=Oswald:wght@400;500&family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,400&family=Ubuntu&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto' , sans-serif;
+    list-style: none;
+}
+.contant{
+    padding:20px;
+    background-color:whitesmoke;
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+    display: flex;
+}
+.contant .dashbored{
+    width:260px;
+    height:100vh;
+    overflow: hidden;
+    background-color: #fff;
+    padding:15px 0;
+    margin-right: 15px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.contant .dashbored ul{
+    height: 95%;
+}
+.contant .dashbored ul li:not(:first-child){
+    padding:15px 10px;
+    margin:10px 0;
+    transition: .5s "background";
+}
+.contant .dashbored ul li:not(:first-child):hover{
+    background-color: skyblue;
+    border-right: 5px solid rgba(255, 0, 212, 0.488);
+}
+.contant .dashbored ul li .logo{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+.contant .dashbored ul li .logo h2{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 800;
+    font-size: 30px;
+}
+.contant .dashbored ul li .logo img{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.contant .dashbored ul li a{
+    color:#000;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.contant .dashbored ul li a i{
+    margin-right: 10px;
+    font-size: 18px;
+}
+.contant .dashbored ul li a span{
+    font-size: 22px;
+}
+
+.contant .dashbored ul .active{
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    width:100%;
+}
+
+/* ============================================  end section dashbord */
+
+.contantinfo{
+    width:calc(100% - 260px);
+    height:100vh;
+}
+.contantinfo nav{
+    width:100%;
+    height:60px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#fff;
+    border-radius:7px;
+    padding:20px;
+    margin-bottom: 30px;
+}
+.contantinfo nav img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    object-fit:cover;
+}
+.contantinfo nav .search{
+    width:260px;
+    height:35px;
+    outline:none;
+    border:none;
+    background-color: whitesmoke;
+    padding:15px;
+    color:#000;
+}
+::placeholder{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+/* end seaction nav */
+
+.imguser{
+    width:100%;
+    height:280px;
+    background: url(../img/pancakes.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items: center;
+    gap:10px;
+    margin-bottom: 30px;
+}
+.imguser img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    border: 2px solid #CDA45E;
+    outline:none;
+    margin-left:30px;
+}
+/* end seaction userimg */
+.profile-user{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    flex-wrap: wrap;
+}
+.personal-info{
+    background-color: #fff;
+    width:240px;
+    height:270px;
+    border-radius:10px;
+    
+}
+.personal-info:not(:first-child){
+    height: 310px;
+    margin-top: -10px;
+}
+.personal-info .title , .title2{
+    width:100%;
+    height:70px;
+    margin-bottom:15px;
+    background-color: skyblue;
+    padding:20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+.personal-info .title2{
+    background-color: rgba(255, 0, 212, 0.488);
+}
+.personal-info .contant-info{
+    padding: 0 20px;
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.personal-info .contant-info .save{
+    padding:5px;
+    border-radius: 3px;
+    border:none;
+    outline:none;
+    background-color: skyblue;
+    color:#fff;
+    text-transform: capitalize;
+    position: relative;
+    left:55%;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.personal-info .contant-info .save2{
+    background-color:rgba(255, 0, 212, 0.488) ;
+}
+
+.personal-info .contant-info .input , .name , .pass , .emails , .phon {
+    width:100%;
+    margin-bottom: 15px;
+    position: relative;
+}
+.personal-info .contant-info .input .pass .change{
+    position: absolute;
+    bottom: 10px;
+    right:0%;
+    border:none;
+    outline:none;
+    color:#fff;
+    background-color: rgba(9, 6, 195, 0.549);
+    padding:5px;
+    border-radius: 3px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.personal-info .contant-info .input .phon span{
+    position: absolute;
+    bottom: 10px;
+    right:0%;
+    padding:6px 12px;
+    background-color: rgba(255, 0, 212, 0.488);
+    color:#fff;
+    cursor: pointer;
+    
+
+}
+.personal-info .contant-info .input  label{
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.personal-info .contant-info .input input{
+    border:none;
+    outline:none;
+    border-bottom: 1px solid #000;
+    padding-bottom:4px;
+    width:100%;
+}
+
+/* =================================================== */
+
+
+.number-order-favorites{
+    width:260px;
+    height:260px;
+    border-radius: 10px;
+    background:skyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    padding: 20px 0;
+}
+
+.number-order-favorites .order{
+    width:140px;
+    height:100px;
+    background-color: #fff;
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.number-order-favorites .favorites{
+    width:140px;
+    height:100px;
+    background-color: #fff;
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.number-order-favorites  h3{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.number-order-favorites span{
+    font-size: 20px;
+}
+.bio{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 400;
+}
+/* end section profile-user  */
+@media (max-width:896px) {
+    .contant{
+        padding: 5px;
+    }
+    .contant .dashbored{
+        width:90px;
+    }
+    .contant .dashbored ul li:not(:first-child){
+        padding:18px 10px;
+        text-align: center;
+    }
+    .contant .dashbored ul li a i {
+        margin-right: 10px;
+        font-size: 25px;
+    }
+    .contant .dashbored ul li a span{
+        display: none;
+    }
+    .contantinfo{
+        width:calc(100% - 100px);
+        height:100vh;
+        overflow: hidden;
+    }
+    .imguser img , h2{
+        display:none;
+    }
+    .profile-user{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:30px;
+        overflow-y: auto;
+        height: calc(100vh - 400px);
+    }
+}

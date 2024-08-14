@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veg Food</title>
+    <!-- file font auwsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+    <!-- file css -->
+    <link rel="stylesheet" href="css-file/food-style.css">
+    <style>
+        .food{
+        min-height:240vh;
+        background: linear-gradient(rgba(0 , 0 , 0 ,0.6),rgba(0,0,0,0.6)) , url(image-veg/veg.jpg);
+        background-size: cover;
+        background-attachment: fixed; 
+        background-position: center;
+    }
+    </style>
+</head>
+<body>
+    <section class="food">
+        <!-- start header -->
+        <header>
+            <div class="container-heder">
+                <h1 class="logo">vegetarian food</h1>
+                <nav>
+                    <ul id="main-link">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="vg-index.html">Veg</a></li>
+                        <li><a href="non-veg.html">Non-Veg</a></li>
+                        <li><a href="ice-cream.html">Ice-Cream</a></li>
+                        <li><a href="milkshaks.html">MilkShakes</a></li>
+                        <li><a href="juice.html">Juices</a></li>
+                        <li><a href="cakes.html">Cakes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+    
+                        <button id="show-product-link">
+                            show product
+                        </button>
+    
+                        <div class="search-response-link">
+                            <input id="input-link" type="text" onkeyup="search(this.id)" placeholder="search here">
+                        </div>
+                    </ul>
+                    <div class="span">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button id="btn-card">
+                        card 
+                        <i class="fa fa-cart-plus" id="cart-icon"></i>'
+                        <div class="cart-count">0</div>
+                    </button>
+                    <button id="search-btn">
+                        search
+                    </button>
+                </nav>
+            </div>
+            <!-- section start cart -->
+            <div class="cart">
+                <h2 class="cart-title">cart item</h2>
+                <div class="cart-content">
+                    <div class="con-item">
+                        
+                    </div>
+                </div>
+    
+                <div class="total">
+                    <div class="total-title">total</div>
+                    <div class="total-price">Rs.0</div>
+                </div>
+    
+                <button class="btn-buy">place order</button>
+    
+                <i class="fa fa-close" id="cart-close"></i>
+                
+                <div class="fixed">
+                    <button class="show-cart">show cart</button>
+                </div>
+                    
+                
+            </div>
+            <!-- section end cart -->
+        </header>
+
+        <!-- end header -->
+        
+        <div class="search">
+            <input id="input" onkeyup="search(this.id)" type="text" placeholder="search here....">
+            <i class="fa fa-close" id="search-close"></i>
+        </div>
+
+
+        <!-- start setion contant -->
+            <div class="container">
+                <div class="box-food">
+                    <img src="image-veg/img7.jpg" alt="" class="food-img">
+                    <h2 class="food-title">frid rice</h2>
+                    <h3 class="food-price">Rs.150.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+                <div class="box-food">
+                    <img src="image-veg/image6.jpg" alt="" class="food-img">
+                    <h2 class="food-title">carrot rice</h2>
+                    <h3  class="food-price">Rs.160.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+                <div class="box-food">
+                    <img src="image-veg/image8.jpg" alt="" class="food-img">
+                    <h2 class="food-title">chanamascale</h2>
+                    <h3  class="food-price">Rs.240.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+                <div class="box-food">
+                    <img src="image-veg/images10.jpg" alt="" class="food-img">
+                    <h2 class="food-title">chilli panner</h2>
+                    <h3  class="food-price">Rs.250.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+                <div class="box-food">
+                    <img src="image-veg/images13.jpg" alt="" class="food-img">
+                    <h2 class="food-title">curd rice</h2>
+                    <h3  class="food-price">Rs.150.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+                <div class="box-food">
+                    <img src="image-veg/images14.jpg" alt="" class="food-img">
+                    <h2 class="food-title">coriander rice</h2>
+                    <h3  class="food-price">Rs.190.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+                <div class="box-food">
+                    <img src="image-veg/images15.jpg" alt="" class="food-img">
+                    <h2 class="food-title">dhal rice</h2>
+                    <h3  class="food-price">Rs.220.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+                <div class="box-food">
+                    <img src="image-veg/images16.jpg" alt="" class="food-img">
+                    <h2 class="food-title">jeera rice</h2>
+                    <h3  class="food-price">Rs.140.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+                <div class="box-food">
+                    <img src="image-veg/images18.jpg" alt="" class="food-img">
+                    <h2 class="food-title">lemon rice</h2>
+                    <h3  class="food-price">Rs.130.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+                <div class="box-food">
+                    <img src="image-veg/images19.jpg" alt="" class="food-img">
+                    <h2 class="food-title">malaik curry</h2>
+                    <h3  class="food-price">Rs.280.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+                <div class="box-food">
+                    <img src="image-veg/images20.jpg" alt="" class="food-img">
+                    <h2 class="food-title">meals</h2>
+                    <h3  class="food-price">Rs.200.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+                <div class="box-food">
+                    <img src="image-veg/images21.jpg" alt="" class="food-img">
+                    <h2 class="food-title">palak paneer</h2>
+                    <h3 class="food-price">Rs.210.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+                <div class="box-food">
+                    <img src="image-veg/images22.jpg" alt="" class="food-img">
+                    <h2 class="food-title">panner gravy</h2>
+                    <h3  class="food-price">Rs.190.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+                <div class="box-food">
+                    <img src="image-veg/images23.jpg" alt="" class="food-img">
+                    <h2 class="food-title">paneer putter</h2>
+                    <h3  class="food-price">Rs.240.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+                <div class="box-food">
+                    <img src="image-veg/images24.jpg" alt="" class="food-img">
+                    <h2 class="food-title">schezwan rice</h2>
+                    <h3 class="food-price">Rs.250.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+                <div class="box-food">
+                    <img src="image-veg/images25.jpg" alt="" class="food-img">
+                    <h2 class="food-title">paneer muchurn </h2>
+                    <h3  class="food-price">Rs.310.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+                <div class="box-food">
+                    <img src="image-veg/images9.jpg" alt="" class="food-img">
+                    <h2 class="food-title">tomato rice</h2>
+                    <h3  class="food-price">Rs.130.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+                <div class="box-food">
+                    <img src="image-veg/img11.jpg" alt="" class="food-img">
+                    <h2 class="food-title">white pulao</h2>
+                    <h3  class="food-price">Rs.150.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+                <div class="box-food">
+                    <img src="image-veg/img12.jpg" alt="" class="food-img">
+                    <h2 class="food-title">chanias fulder</h2>
+                    <h3  class="food-price">Rs.320.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+                <div class="box-food">
+                    <img src="image-veg/img1.jpg" alt="" class="food-img">
+                    <h2 class="food-title">mainges rice</h2>
+                    <h3  class="food-price">Rs.170.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+                <div class="box-food">
+                    <img src="image-veg/img5.png" alt="" class="food-img">
+                    <h2 class="food-title">daclan rice</h2>
+                    <h3  class="food-price">Rs.290.00</h3>
+                    <i class="fa-solid fa-heart"></i>
+                    <button class="add-card">
+                            Add to cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- end section content -->
+    </section>
+
+    <!-- fill javascript -->
+    <script src="javascrpt-file/main.js"></script>
+    
+</body>
+</html>

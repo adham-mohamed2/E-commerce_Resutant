@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile padge</title>
+    <!-- file font auwsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- file css -->
+    <link rel="stylesheet" href="css-file/profile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="contant">
+            <div class="dashbored">
+                    <ul>
+                        <li >
+                            <a class="logo" href="index.html">
+                                <img src="logo/logo3.png" alt="">
+                                <h2>caterung</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                <i class="fas fa-home"></i>
+                                <span>home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="non-veg.html">
+                                <i class="fa-solid fa-utensils"></i>
+                                <span>eat</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="milkshaks.html">
+                                <i class="fa-solid fa-cookie-bite"></i>
+                                <span>snacks</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cart.html">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                <span>cart</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="favorite.html">
+                                <i class="fa-solid fa-heart"></i>
+                                <span>favorites</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-person-biking"></i>
+                                <span>order</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="profile.html">
+                                <i class="fa-solid fa-user"></i>
+                                <span>profile</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="">
+                                <i class="fas fa-sign-in"></i>
+                                <span class="logout">logout</span>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+            <div class="contantinfo">
+                <nav>
+                    <input type="text" class="search" placeholder="search here...">
+                    <img src="logo/logo3.png" alt="">
+                </nav>
+                <div class="imguser">
+                    <img src="logo/logo3.png" alt="">
+                    <h2 class="name"></h2>
+                </div>
+                <div class="profile-user">
+                    <div class="personal-info">
+                        <h3 class="title">
+                            personal info
+                        </h3>
+                        <div class="contant-info">
+                            <button class="save">
+                                save changes
+                            </button>
+                            <div class="input">
+                                <div class="name">
+                                    <label for="">name</label>
+                                    <input  id="name" type="text" >
+                                </div>
+                                <div class="bio">
+                                    <label for="">bio</label>
+                                    <input id="bio" type="text" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personal-info">
+                        <h3 class="title2">
+                            personal info
+                        </h3>
+                        <div class="contant-info">
+                            <button class="save">
+                                save changes
+                            </button>
+                            <div class="input">
+                                <div class="emails">
+                                    <label for="">email</label>
+                                    <input  type="email" id="email">
+                                </div>
+                                <div class="pass">
+                                    <label for="">password</label>
+                                    <button class="change">
+                                        change
+                                    </button>
+                                    <input  type="password" class="password" minlength="7" readonly autofocus>
+                                </div>
+                                <div class="phon">
+                                    <label for="">phone</label>
+                                    <span>+</span>
+                                <input type="tel" class="phone">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="number-order-favorites">
+                        <div class="order">
+                            <h3>order</h3>
+                            <span id="number-order">0</span>
+                        </div>
+                        <div class="favorites">
+                            <h3>favorites</h3>
+                            <span id="number-favorites">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- file javascript -->
+    <script src="javascrpt-file/profile.js"></script>
+</body>
+</html>
